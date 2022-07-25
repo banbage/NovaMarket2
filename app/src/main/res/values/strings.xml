@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">NovaMarket</string>
+
+    <string name="naver_client_id">OSBiP6PHy7aMeXQnH6dF</string>
+    <string name="naver_client_secret">Uxoa2xP2Wp</string>
+    <string name="naver_client_name">NovaMarket</string>
+
+    <string-array name="free_search">
+        <item>제목</item>
+        <item>내용</item>
+        <item>작성자</item>
+    </string-array>
+
+    <string-array name="check_difficult">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>Hell</item>
+    </string-array>
+
+    <string-array name="check_success">
+        <item>성공</item>
+        <item>실패</item>
+    </string-array>
+
+    <string-array name="select_genre">
+        <item>추리</item>
+        <item>스릴러</item>
+        <item>로맨스</item>
+        <item>공포</item>
+        <item>판타지</item>
+        <item>SF</item>
+        <item>액션</item>
+        <item>모험</item>
+    </string-array>
+
+    <string-array name="select_user">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="times_limit">
+        <item>10분</item>
+        <item>20분</item>
+        <item>30분</item>
+        <item>40분</item>
+        <item>50분</item>
+        <item>60분</item>
+        <item>70분</item>
+        <item>80분</item>
+        <item>90분</item>
+        <item>100분</item>
+        <item>110분</item>
+        <item>120분</item>
+    </string-array>
+
+</resources>
