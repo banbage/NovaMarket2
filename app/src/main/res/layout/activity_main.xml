@@ -51,9 +51,9 @@
         android:layout_marginTop="76dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/borderline"
-        android:hint="아이디"
+        android:hint="전화번호 또는 이메일"
         android:inputType="text"
-        android:maxLength="15"
+        android:maxLength="25"
         android:maxLines="1"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +70,7 @@
         android:layout_marginEnd="15dp"
         android:background="@drawable/borderline"
         android:hint="비밀번호"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:maxLength="15"
         android:maxLines="1"
         android:padding="15dp"
@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/main_id" />
 
     <CheckBox
-        android:id="@+id/main_check"
+        android:id="@+id/main_auto_login"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="10dp"
@@ -105,37 +105,6 @@
         app:layout_constraintTop_toBottomOf="@+id/main_login_btn" />
 
 
-    <TextView
-        android:id="@+id/main_find_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginBottom="25dp"
-        android:text="비밀번호 찾기"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/main_find_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:padding="10dp"
-        android:text="아이디 찾기"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
     <!--    <com.navercorp.nid.oauth.view.NidOAuthLoginButton-->
     <!--        android:id="@+id/main_naver"-->
     <!--        android:layout_width="wrap_content"-->
@@ -151,37 +120,70 @@
     <!--        app:layout_constraintHorizontal_bias="1.0"-->
     <!--        app:layout_constraintStart_toStartOf="parent" />-->
 
-    <TextView
-        android:id="@+id/main_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
-        android:padding="10dp"
-        android:text="회원 탈퇴"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_logout"
-        app:layout_constraintVertical_bias="0.85" />
 
     <TextView
-        android:id="@+id/main_logout"
+        android:id="@+id/main_find_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="12dp"
         android:padding="10dp"
-        android:text="로그아웃"
+        android:text="비밀번호 찾기"
         android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_kakao" />
+
+    <TextView
+        android:id="@+id/main_find_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:padding="10dp"
+        android:text="아이디 찾기"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/main_kakao" />
+
+    <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+        android:id="@+id/main_naver"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_naver"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintTop_toBottomOf="@+id/main_login_btn" />
+
+    <TextView
+        android:id="@+id/main_kakao"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/kakao"
+        app:layout_constraintEnd_toEndOf="@+id/main_naver"
+        app:layout_constraintStart_toStartOf="@+id/main_naver"
+        app:layout_constraintTop_toBottomOf="@+id/main_naver" />
+
+    <com.kakao.usermgmt.LoginButton
+        android:id="@+id/main_kakao_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/main_kakao"
+        app:layout_constraintTop_toBottomOf="@+id/main_kakao" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/main_google"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/main_kakao"
+        app:layout_constraintStart_toStartOf="@+id/main_kakao"
+        app:layout_constraintTop_toBottomOf="@+id/main_kakao" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

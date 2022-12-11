@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.novamarket.R;
 
-public class Activity_Home extends AppCompatActivity {
+public class Comm_Cate extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_comm_cate);
     }
 }

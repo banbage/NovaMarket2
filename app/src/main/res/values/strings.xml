@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">NovaMarket</string>
 
+    <!-- 본인 Client ID -->
     <string name="naver_client_id">OSBiP6PHy7aMeXQnH6dF</string>
+    <!-- Client Secret key -->
     <string name="naver_client_secret">Uxoa2xP2Wp</string>
+    <!-- 어플리케이션 이름 아무거나 입력가능 -->
     <string name="naver_client_name">NovaMarket</string>
+    <!--  카카오 로그인 API   -->
+    <string name="kakao_app_key">05a11b1e55ea766a72717293b590f1fd</string>
+    <string name="web_client_id">AIzaSyAHK5gy6KZHeqiGhD2HwNLKz2tRY3ShjYY</string>
+    <string name="server_url">http://3.39.57.242/</string>
 
     <string-array name="free_search">
         <item>제목</item>
@@ -54,5 +61,7 @@
         <item>110분</item>
         <item>120분</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "736382391683",
+    "project_id": "novamarket-f8d50",
+    "storage_bucket": "novamarket-f8d50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736382391683:android:c9ae6f314761d1afa492b6",
+        "android_client_info": {
+          "package_name": "com.example.novamarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736382391683-l84rbn2khvd07poif49ccvi9p0chuq0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHK5gy6KZHeqiGhD2HwNLKz2tRY3ShjYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736382391683-l84rbn2khvd07poif49ccvi9p0chuq0k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

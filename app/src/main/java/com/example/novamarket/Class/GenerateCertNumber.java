@@ -1,5 +1,7 @@
 package com.example.novamarket.Class;
 
+import com.orhanobut.logger.Logger;
+
 import java.util.Random;
 
 public class GenerateCertNumber {
@@ -8,7 +10,6 @@ public class GenerateCertNumber {
 
     public String excuteGenerate() {
         Random random = new Random(System.currentTimeMillis());
-
         int range = (int)Math.pow(10,certNumLength);
         int trim = (int)Math.pow(10, certNumLength-1);
         int result = random.nextInt(range)+trim;
@@ -30,7 +31,7 @@ public class GenerateCertNumber {
 
     public static void main(String[] args) {
         GenerateCertNumber ge = new GenerateCertNumber();
-        ge.setCertNumLength(5);
-        System.out.println(ge.excuteGenerate());
+        ge.setCertNumLength(4);
+        Logger.d(ge.excuteGenerate());
     }
 }

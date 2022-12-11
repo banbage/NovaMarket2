@@ -24,7 +24,6 @@ public class RetrofitClient {
                 .setLenient() // Lenient : 관용 // RFC4627 의 규칙을 위반하는 JSON 은 처리하지 않지만, 허용의 폭을 넓혀줌
                 .create();
 
-
         // 1. 인터셉터 객체 생성
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         // 2. 로그를 어떤 단계까지 표시할지 설정 - HTML 의 어디의 데이터를 가져올지
@@ -36,13 +35,20 @@ public class RetrofitClient {
                 .writeTimeout(5, TimeUnit.SECONDS) // 통신 타임아웃시간 설정
                 .readTimeout(5, TimeUnit.SECONDS)
                 .addInterceptor(interceptor) // 인터셉터 설정
+                .retryOnConnectionFailure(false)
                 .build();
 
-        retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL) // http 통신을 실행할 URL 주소
-                .addConverterFactory(GsonConverterFactory.create(gson)) // 어떤 형태로 데이터를 parsing 할지 설정
-                .client(client) // okHttp 객체 추가
-                .build();
+//                if (retrofit == null) {
+                    retrofit = new Retrofit.Builder()
+                            //서버 주소 등록
+                            .baseUrl(BASE_URL)
+                            // Gson 컨버터 생성 Gson 형태의 파일을 객체로 만들어줌
+                            .addConverterFactory(GsonConverterFactory.create(gson))
+                            // 로그 찍는 인터셉터 추가
+                            .client(client)
+                            // build
+                            .build();
+//                }
 
         return retrofit;
     }

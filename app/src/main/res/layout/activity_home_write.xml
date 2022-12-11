@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Home_Write">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/write_price"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/write_border"
+                android:ellipsize="start"
+                android:textStyle="bold"
+                android:ems="10"
+                android:hint="￦ 가격"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:maxLength="15"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/write_cate" />
+
+            <TextView
+                android:id="@+id/write_top"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#46C88F8F"
+                android:ems="10"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:text="판매 글 작성"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/write_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="완료"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/write_top"
+                app:layout_constraintEnd_toEndOf="@+id/write_top"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/write_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/borderline"
+                android:paddingTop="10dp"
+                android:paddingBottom="35dp"
+                android:src="@drawable/camera"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/write_top" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/write_rv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/write_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/write_img"
+                app:layout_constraintTop_toBottomOf="@+id/write_top" />
+
+            <TextView
+                android:id="@+id/write_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="15dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/write_img"
+                app:layout_constraintEnd_toStartOf="@+id/textview22" />
+
+            <TextView
+                android:id="@+id/textview22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="/3"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/write_number"
+                app:layout_constraintEnd_toEndOf="@+id/write_img" />
+
+            <EditText
+                android:id="@+id/write_title"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/write_border"
+                android:ellipsize="start"
+                android:ems="10"
+                android:hint="제목 (15자)"
+                android:maxLength="15"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/write_rv" />
+
+            <TextView
+                android:id="@+id/write_cate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/write_border"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="카테고리 선택"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/write_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text=">"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/write_price"
+                app:layout_constraintEnd_toEndOf="@+id/write_cate"
+                app:layout_constraintTop_toBottomOf="@+id/write_title" />
+
+            <EditText
+                android:id="@+id/write_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderlinetop"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="게시글 내용을 작성해주세요.\n가품 및 판매금지품목은 게시가 제한될 수 있습니다."
+                android:inputType="textMultiLine"
+                android:maxLength="300"
+                android:minLines="11"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="15dp"
+                android:scrollHorizontally="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/write_price" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/write_propose_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:clickable="false"
+                app:layout_constraintBottom_toBottomOf="@+id/write_price"
+                app:layout_constraintEnd_toEndOf="@+id/write_price"
+                app:layout_constraintTop_toTopOf="@+id/write_price">
+
+                <it.emperor.animatedcheckbox.AnimatedCheckBox
+                    android:id="@+id/write_propose"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:acb_animation_duration="500"
+                    app:acb_border_checked_color="#000000"
+                    app:acb_border_not_checked_color="@color/borderLine"
+                    app:acb_checked="true"
+                    app:acb_circle_color="#FF9800"
+                    app:acb_hook_color="@color/white"
+                    app:acb_hook_stroke_width="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가격 제안받기"
+                    android:textSize="15sp"
+                    android:layout_marginStart="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/write_propose"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/write_propose"
+                    app:layout_constraintTop_toTopOf="@+id/write_propose" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/write_won"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￦"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/write_price"
+                app:layout_constraintStart_toStartOf="@+id/write_price"
+                app:layout_constraintTop_toTopOf="@+id/write_price" />
+
+            <TextView
+                android:id="@+id/write_won2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="원"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/write_price"
+                app:layout_constraintEnd_toStartOf="@+id/write_propose_btn"
+                app:layout_constraintTop_toTopOf="@+id/write_price" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

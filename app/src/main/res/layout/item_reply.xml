@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/item_reply_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_reply_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="우파루파푸른하늘"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/item_reply_image"
+            app:layout_constraintTop_toTopOf="@+id/item_reply_image" />
+
+        <TextView
+            android:id="@+id/item_reply_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3시간 전"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_reply_image"
+            app:layout_constraintStart_toStartOf="@+id/item_reply_name" />
+
+        <TextView
+            android:id="@+id/item_reply_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="좋아요"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/item_reply_text"
+            app:layout_constraintTop_toBottomOf="@+id/item_reply_text" />
+
+        <TextView
+            android:id="@+id/item_reply_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="아무내용이나 적어보자"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/item_reply_date"
+            app:layout_constraintTop_toBottomOf="@+id/item_reply_date" />
+
+        <ImageView
+            android:id="@+id/item_reply_menu"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_reply_image" />
+
+        <TextView
+            android:id="@+id/item_reply_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/category_check"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:text="작성자"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/item_reply_name"
+            app:layout_constraintStart_toEndOf="@+id/item_reply_name"
+            app:layout_constraintTop_toTopOf="@+id/item_reply_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

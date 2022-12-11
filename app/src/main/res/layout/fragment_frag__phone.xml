@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Frag_Phone">
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/borderline"
+        android:hint="* 휴대폰 번호 - 없이 입력"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:maxLines="1"
+        android:maxLength="11"
+        android:textSize="20sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/phone_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phone_auth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/borderline"
+        android:hint="* 인증번호 입력"
+        android:inputType="number"
+        android:enabled="false"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/phone_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <TextView
+        android:id="@+id/phone_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_check_end"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="다음"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/phone_check"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phone_auth" />
+
+    <TextView
+        android:id="@+id/phone_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#24409F"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginEnd="10dp"
+        android:text="인증번호"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phone_number" />
+
+    <TextView
+        android:id="@+id/phone_check"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#24409F"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="번호확인"
+        android:enabled="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_auth"
+        app:layout_constraintEnd_toEndOf="@+id/phone_submit"
+        app:layout_constraintTop_toTopOf="@+id/phone_auth" />
+
+    <TextView
+        android:id="@+id/phone_reset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="인증번호가 도착하지 않으셨나요??"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/phone_auth"
+        app:layout_constraintStart_toStartOf="@+id/phone_auth"
+        app:layout_constraintTop_toBottomOf="@+id/phone_auth" />
+
+    <TextView
+        android:id="@+id/phone_timer"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="01분 30초"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/phone_reset"
+        app:layout_constraintTop_toTopOf="@+id/phone_reset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

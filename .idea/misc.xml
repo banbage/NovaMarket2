@@ -3,8 +3,81 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/border_circle.xml" value="0.2335" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/borderline.xml" value="0.201" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/borderline_bottom.xml" value="0.201" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/borderline_kakao.xml" value="0.201" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/borderlinetop.xml" value="0.201" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/category_borderline.xml" value="0.201" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/category_check.xml" value="0.201" />
         <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/category_check_end.xml" value="0.1755" />
-        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_main.xml" value="0.2296875" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/circle_image.xml" value="0.201" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/likebutton.xml" value="0.21" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/radio_text.xml" value="0.184" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/radius_image.xml" value="0.328" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/search_edit.xml" value="0.184" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/shape_circle.xml" value="0.201" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/drawable/write_border.xml" value="0.1395" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_change_info.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_chat.xml" value="0.11145833333333334" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_comm.xml" value="0.11145833333333334" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_comm_read.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_comm_reply.xml" value="0.176" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_comm_search.xml" value="0.228125" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_comm_write.xml" value="0.264" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_community.xml" value="0.24547101449275363" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_gmail_sender.xml" value="0.1" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home.xml" value="0.228125" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home_cate.xml" value="0.12916666666666668" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home_chat.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home_chat_list.xml" value="0.15" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home_location.xml" value="0.20260416666666667" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home_location2.xml" value="0.20260416666666667" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home_read.xml" value="0.264" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home_search.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_home_write.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_join.xml" value="0.2296875" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_join_adapter.xml" value="0.1765625" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_list_buy.xml" value="0.1921875" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_list_like.xml" value="0.1921875" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_list_sell.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_my_page.xml" value="0.11145833333333334" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_slide.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/activity_user_info.xml" value="0.18645833333333334" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/dialog_check.xml" value="0.4026268115942029" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/dialog_menu.xml" value="0.4026268115942029" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_blank.xml" value="0.26979166666666665" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_chat.xml" value="0.136" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_comm.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_frag__buy.xml" value="0.15" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_frag__chat.xml" value="0.10625" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_frag__email.xml" value="0.4" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_frag__my_page.xml" value="0.228125" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_frag__phone.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_frag__sale.xml" value="0.17806484295845998" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/fragment_mypage.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_add.xml" value="0.4" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_cate.xml" value="0.3651041666666667" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_chat_image_receive.xml" value="0.264" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_chat_image_send.xml" value="0.264" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_chat_join.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_chat_list.xml" value="0.264" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_chat_location_receive.xml" value="0.21041666666666667" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_chat_location_send.xml" value="0.264" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_chat_receive.xml" value="0.2" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_chat_send.xml" value="0.4" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_comm.xml" value="0.4" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_comment.xml" value="0.264" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_home.xml" value="0.264" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_home_write_img.xml" value="0.176" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_image.xml" value="0.12" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_image_receive.xml" value="0.19114583333333332" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_reply.xml" value="0.4" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_search.xml" value="0.18697916666666667" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/layout/item_vp_image.xml" value="0.25317028985507245" />
+        <entry key="..\:/AndroidCode/NovaMarket_0.1/app/src/main/res/menu/bottom_menu.xml" value="0.2046875" />
       </map>
     </option>
   </component>
@@ -13,5 +86,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.4026268115942029" />
+      </ProjectState>
+    </option>
   </component>
 </project>

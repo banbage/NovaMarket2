@@ -3,16 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.novamarket">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- 권한 추가 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 권한 추가 -->
     <!-- 카메라 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 내 위치 지도 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" /> <!-- 외부 저장소 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 인터넷 -->
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- 문자 받을 수 있는 권한 -->
-    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- 문자 전송 할 수 있는 권한 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- 문자  받을 수 있는 권한 -->
     <uses-permission android:name="android.permission.SEND_SMS" /> <!-- 문자를 읽을 수 있는 권한 -->
     <uses-permission android:name="android.permission.READ_SMS" /> <!-- 유저 단말기 정보를 가져 오기 위한 권한 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 인터넷 연결 상태 확인 -->
@@ -20,6 +19,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
+        android:name=".Class.GlobalHelper"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -28,15 +28,98 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NovaMarket"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.Activity_Join_Email"
+            android:name=".Activity.Home_Location2"
             android:exported="false" />
         <activity
-            android:name=".Activity.Activity_Join"
+            android:name=".Activity.Home_Location"
             android:exported="false" />
         <activity
-            android:name=".Activity.Activity_Home"
+            android:name=".Activity.Home_Chat"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Home_Chat_list"
+            android:exported="false" />
+
+        <service
+            android:name=".Service.Service_Chat"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activity.Comm_Reply"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.Comm_Write"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Comm_Search"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Comm_Read"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Comm_Cate"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Slide"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".Activity.Home_Read"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Home_Search"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Home_Cate"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Home_Write"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ListLike"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ListBuy"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ListSale"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ChangeInfo"
+            android:exported="false" />
+        <activity android:name=".Class.NaverLogin" />
+        <activity android:name=".Class.KakaoLogin" />
+        <activity android:name=".Class.GoogleLogin" />
+        <activity
+            android:name=".Activity.UserInfo"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="dmw1yjiroc" />
+
+        <receiver
+            android:name=".Class.SMSReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.Join"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Home"
             android:exported="false" />
         <activity
             android:name="com.nhn.android.naverlogin.ui.OAuthCustomTabActivity"
